@@ -2,7 +2,7 @@ class PDController:
     def __init__(self):
         self.kp = 0.15 # proportional gain
         self.kd = 0.6 # derivative gain
-        self.previous_error = 0
+        self.reset()
 
     def reset(self):
         # Function to reset the controller state
