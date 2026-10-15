@@ -1,11 +1,11 @@
 class PDController:
     def __init__(self):
-        self.kp = 0.15 # proportional gain
-        self.kd = 0.6 # derivative gain
-        self.reset()
+        self.kp = 0.15  # proportional gain
+        self.kd = 0.6  # derivative gain
+        self.reset()  # initialise the controller state
 
     def reset(self):
-        # Function to reset the controller state
+        # Reset the previous error to zero for the next control cycle
         self.previous_error = 0
 
     def control(self, reference, observation):
