@@ -4,6 +4,10 @@ class PDController:
         self.kd = 0.6 # derivative gain
         self.previous_error = 0
 
+    def reset(self):
+        # Function to reset the controller state
+        self.previous_error = 0
+
     def control(self, reference, observation):
         # Calculate error term for the time step
         error = reference - observation
