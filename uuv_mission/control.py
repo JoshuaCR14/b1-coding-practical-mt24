@@ -13,6 +13,8 @@ class PDController:
 
         # Updates previous error for next time step
         self.previous_error = error
+
+        # Return the control action
         return action
 
 
